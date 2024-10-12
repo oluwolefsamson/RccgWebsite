@@ -2,7 +2,7 @@ import heroImg from "../../assets/images/hero.jpg";
 
 export default function Hero() {
   return (
-    <div className="mt-8">
+    <div className="">
       {/* Section with background image */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div

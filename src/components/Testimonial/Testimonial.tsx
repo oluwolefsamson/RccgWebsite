@@ -1,49 +1,49 @@
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
 
-const reviews = [
+const testimonies = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    name: "Grace",
+    username: "@grace",
+    body: "My life has completely changed after joining the church. I have found peace and purpose through God's word.",
+    img: "https://avatar.vercel.sh/grace",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    name: "Michael",
+    username: "@michael",
+    body: "I was going through a tough time, but the community here embraced me, and I've grown spiritually like never before.",
+    img: "https://avatar.vercel.sh/michael",
+  },
+  {
+    name: "Sarah",
+    username: "@sarah",
+    body: "Through prayer and fellowship at this church, my family and I have experienced true transformation.",
+    img: "https://avatar.vercel.sh/sarah",
+  },
+  {
+    name: "David",
+    username: "@david",
+    body: "This church has given me a sense of belonging and spiritual growth that I had been longing for.",
+    img: "https://avatar.vercel.sh/david",
+  },
+  {
+    name: "Emily",
+    username: "@emily",
+    body: "I’ve found a loving, supportive community here. My faith has deepened since I started attending.",
+    img: "https://avatar.vercel.sh/emily",
   },
   {
     name: "John",
     username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    body: "Being part of this church has renewed my hope and strengthened my relationship with God.",
     img: "https://avatar.vercel.sh/john",
-  },
-  {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
-  },
-  {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
-  },
-  {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
   },
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+const firstRow = testimonies.slice(0, testimonies.length / 2);
+const secondRow = testimonies.slice(testimonies.length / 2);
 
-const ReviewCard = ({
+const TestimonyCard = ({
   img,
   name,
   username,
@@ -80,19 +80,22 @@ const ReviewCard = ({
 
 export default function Testimonial() {
   return (
-    <div className=" relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-      <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
-        ))}
-      </Marquee>
-      <Marquee reverse pauseOnHover className="[--duration:20s]">
-        {secondRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
-        ))}
-      </Marquee>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+    <div>
+      <h2 className="heading font-bold ml-2 text-blue-700">Testimonials</h2>{" "}
+      <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+        <Marquee pauseOnHover className="[--duration:20s]">
+          {firstRow.map((testimony) => (
+            <TestimonyCard key={testimony.username} {...testimony} />
+          ))}
+        </Marquee>
+        <Marquee reverse pauseOnHover className="[--duration:20s]">
+          {secondRow.map((testimony) => (
+            <TestimonyCard key={testimony.username} {...testimony} />
+          ))}
+        </Marquee>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+      </div>
     </div>
   );
 }

@@ -13,15 +13,20 @@ export default function Feature() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h1 className=" font-semibold leading-7 text-indigo-600 mb-6">
+              <h1 className="heading font-semibold text-lg text-indigo-600 ">
                 Our Features
               </h1>
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>
+                  <AccordionTrigger className="text-md text-green-600 font-bold">
                     Transformative Worship Exp.
                   </AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionContent
+                    className="flex flex-col "
+                    style={{
+                      lineHeight: "30px",
+                    }}
+                  >
                     At Grace Community Church Family, we believe in the power of
                     authentic worship. Every Sunday, we gather as a community to
                     encounter the presence of God through inspiring praise, deep
@@ -31,10 +36,15 @@ export default function Feature() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>
+                  <AccordionTrigger className="text-md text-green-600 font-bold">
                     Community Outreach and Care
                   </AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionContent
+                    className="flex flex-col "
+                    style={{
+                      lineHeight: "30px",
+                    }}
+                  >
                     We are passionate about making a positive impact in the
                     community around us. Through our outreach programs, we
                     extend the love of Christ to those in need. From feeding the
@@ -44,10 +54,15 @@ export default function Feature() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>
+                  <AccordionTrigger className="text-md text-green-600 font-bold">
                     Bible Study and Spiritual Growth
                   </AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionContent
+                    className="flex flex-col "
+                    style={{
+                      lineHeight: "30px",
+                    }}
+                  >
                     Spiritual growth is at the core of who we are. Our weekly
                     Bible studies offer an opportunity to dive deeper into the
                     Word of God, engage in thoughtful discussions, and apply
@@ -57,10 +72,15 @@ export default function Feature() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                  <AccordionTrigger>
+                  <AccordionTrigger className="text-md text-green-600 font-bold">
                     Children & Youth fellowship
                   </AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionContent
+                    className="flex flex-col "
+                    style={{
+                      lineHeight: "30px",
+                    }}
+                  >
                     We are dedicated to raising up the next generation in
                     Christ. Our children’s and youth ministries offer engaging,
                     age-appropriate activities that help young hearts and minds
@@ -71,8 +91,15 @@ export default function Feature() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
-                  <AccordionTrigger>Prayer and Pastoral Care</AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionTrigger className="text-md text-green-600 font-bold">
+                    Prayer and Pastoral Care
+                  </AccordionTrigger>
+                  <AccordionContent
+                    className="flex flex-col "
+                    style={{
+                      lineHeight: "30px",
+                    }}
+                  >
                     At Grace Community Church Family, we believe in the power of
                     prayer. Our prayer team is here to walk with you through the
                     highs and lows of life, providing spiritual support and
@@ -82,10 +109,15 @@ export default function Feature() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-6">
-                  <AccordionTrigger>
+                  <AccordionTrigger className="text-md text-green-600 font-bold">
                     Family and Marriage Support
                   </AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionContent
+                    className="flex flex-col "
+                    style={{
+                      lineHeight: "30px",
+                    }}
+                  >
                     We believe that strong families build a strong community.
                     Our family and marriage ministry is dedicated to helping
                     couples and families grow in love, faith, and unity. Through

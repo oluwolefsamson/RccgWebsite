@@ -69,7 +69,7 @@ export default function Header() {
 
         {/* Contact button */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <button className="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition duration-300">
+          <button className="bg-green-500 text-white font-bold py-2 px-4  hover:bg-green-600 transition duration-300">
             Contact
           </button>
         </div>
@@ -79,7 +79,7 @@ export default function Header() {
       <Dialog
         open={mobileMenuOpen}
         onClose={() => setMobileMenuOpen(false)}
-        className="lg:hidden"
+        className="lg:hidden text-blue-700 "
       >
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -90,7 +90,7 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-blue-700"
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="h-6 w-6" />

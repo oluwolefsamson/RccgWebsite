@@ -5,5 +5,13 @@
 body {
   font-family: "Poppins", sans-serif, "Abril Fatface", serif;
   background-color: #f0f0f0;
-  padding: 2rem;
+}
+
+.heading {
+  font-size: 30px;
+  font-family: "Abril Fatface";
+  letter-spacing: 10px;
+  margin-bottom: 3rem;
+  border-left: solid green 5px;
+  padding: 5px;
 }
