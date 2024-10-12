@@ -19,7 +19,7 @@ export default function Feature() {
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
-                    Transformative Worship Experience
+                    Transformative Worship Exp.
                   </AccordionTrigger>
                   <AccordionContent>
                     At Grace Community Church Family, we believe in the power of
@@ -58,7 +58,7 @@ export default function Feature() {
                 </AccordionItem>
                 <AccordionItem value="item-4">
                   <AccordionTrigger>
-                    Vibrant Children and Youth Ministry
+                    Children & Youth fellowship
                   </AccordionTrigger>
                   <AccordionContent>
                     We are dedicated to raising up the next generation in
