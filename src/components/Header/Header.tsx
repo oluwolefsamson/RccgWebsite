@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Dialog, DialogPanel, Popover, PopoverGroup } from "@headlessui/react";
+import { Dialog, DialogPanel, PopoverGroup } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { PhoneIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
+import { PlayCircleIcon } from "@heroicons/react/20/solid";
 
 import Logo from "../../assets/images/logo.jpg";
 
